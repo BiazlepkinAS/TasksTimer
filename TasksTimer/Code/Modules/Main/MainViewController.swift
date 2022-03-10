@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  MainViewController.swift
 //  TasksTimer
 //
 //  Created by Andrei Bezlepkin on 10.03.22.
