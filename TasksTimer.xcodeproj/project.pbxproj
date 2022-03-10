@@ -19,6 +19,9 @@
 		0927DB4E27DA4D1300BE0309 /* emilio 20.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0927DB4927DA4D1300BE0309 /* emilio 20.ttf */; };
 		0927DB5027DA4D1300BE0309 /* matrix.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0927DB4C27DA4D1300BE0309 /* matrix.ttf */; };
 		0927DB5427DA4E4C00BE0309 /* ColorsExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0927DB5327DA4E4C00BE0309 /* ColorsExt.swift */; };
+		0927DB5627DA62CA00BE0309 /* FoundationExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0927DB5527DA62CA00BE0309 /* FoundationExt.swift */; };
+		0927DB5827DA63E800BE0309 /* Box.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0927DB5727DA63E800BE0309 /* Box.swift */; };
+		0927DB5A27DA65EA00BE0309 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0927DB5927DA65EA00BE0309 /* Constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +58,9 @@
 		0927DB4927DA4D1300BE0309 /* emilio 20.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "emilio 20.ttf"; sourceTree = "<group>"; };
 		0927DB4C27DA4D1300BE0309 /* matrix.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = matrix.ttf; sourceTree = "<group>"; };
 		0927DB5327DA4E4C00BE0309 /* ColorsExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorsExt.swift; sourceTree = "<group>"; };
+		0927DB5527DA62CA00BE0309 /* FoundationExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoundationExt.swift; sourceTree = "<group>"; };
+		0927DB5727DA63E800BE0309 /* Box.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Box.swift; sourceTree = "<group>"; };
+		0927DB5927DA65EA00BE0309 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -174,6 +180,7 @@
 			children = (
 				0927DB0F27DA48F000BE0309 /* AppDelegate.swift */,
 				0927DB1127DA48F000BE0309 /* SceneDelegate.swift */,
+				0927DB5727DA63E800BE0309 /* Box.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -196,6 +203,7 @@
 			isa = PBXGroup;
 			children = (
 				0927DB5327DA4E4C00BE0309 /* ColorsExt.swift */,
+				0927DB5527DA62CA00BE0309 /* FoundationExt.swift */,
 			);
 			path = Extentions;
 			sourceTree = "<group>";
@@ -203,6 +211,7 @@
 		0927DB4727DA4C2E00BE0309 /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
+				0927DB5927DA65EA00BE0309 /* Constants.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -365,9 +374,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0927DB5827DA63E800BE0309 /* Box.swift in Sources */,
 				0927DB1427DA48F000BE0309 /* MainViewController.swift in Sources */,
 				0927DB5427DA4E4C00BE0309 /* ColorsExt.swift in Sources */,
 				0927DB1027DA48F000BE0309 /* AppDelegate.swift in Sources */,
+				0927DB5627DA62CA00BE0309 /* FoundationExt.swift in Sources */,
+				0927DB5A27DA65EA00BE0309 /* Constants.swift in Sources */,
 				0927DB1227DA48F000BE0309 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
