@@ -26,7 +26,7 @@
         <!--New Task View Controller-->
         <scene sceneID="W8G-ee-h3Y">
             <objects>
-                <viewController storyboardIdentifier="NewTaskViewController" id="huH-Pe-gsD" customClass="NewTaskViewController" customModule="TasksTimer" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="huH-Pe-gsD" customClass="NewTaskViewController" customModule="TasksTimer" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="jrE-2d-pcy">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -44,6 +44,9 @@
                                 <buttonConfiguration key="configuration" style="plain" image="multiply" catalog="system">
                                     <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="pointSize" pointSize="24" scale="large" weight="semibold"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="closedButtonPressed:" destination="huH-Pe-gsD" eventType="touchUpInside" id="0Ax-A5-BgU"/>
+                                </connections>
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lov-lr-qTT">
                                 <rect key="frame" x="24" y="130" width="366" height="104"/>
@@ -195,6 +198,9 @@
                                 <buttonConfiguration key="configuration" style="plain" title="START">
                                     <fontDescription key="titleFontDescription" type="system" weight="semibold" pointSize="20"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="startButtonPressed:" destination="huH-Pe-gsD" eventType="touchUpInside" id="Cfb-ID-idx"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="w6q-gS-mTo"/>
@@ -218,6 +224,17 @@
                             <constraint firstItem="I4m-b5-8Fi" firstAttribute="centerY" secondItem="sps-dp-i55" secondAttribute="centerY" id="yqd-7O-Tzb"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="closedButton" destination="I4m-b5-8Fi" id="fUb-hG-gtp"/>
+                        <outlet property="collectionView" destination="BHu-4U-42N" id="woi-0D-GUR"/>
+                        <outlet property="hoursTF" destination="Ch9-fv-FvV" id="R6p-dK-NRI"/>
+                        <outlet property="minutiesTF" destination="tKj-Ft-AZI" id="WZU-QG-hc3"/>
+                        <outlet property="secondsTF" destination="0c0-vR-0sC" id="bxz-e0-Tx4"/>
+                        <outlet property="startButton" destination="sqg-WS-Ukr" id="gvY-lX-7a6"/>
+                        <outlet property="taskContainer" destination="lov-lr-qTT" id="ghe-x1-Fou"/>
+                        <outlet property="taskDescription" destination="VPY-UK-Kwl" id="o7f-gS-Wv2"/>
+                        <outlet property="taskNameTF" destination="eot-ys-hjF" id="LEW-U6-Njb"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DgJ-i4-uVh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

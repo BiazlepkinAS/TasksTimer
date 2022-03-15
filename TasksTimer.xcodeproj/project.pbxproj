@@ -25,6 +25,8 @@
 		09C65BA227DF86140038C96E /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09C65BA127DF86140038C96E /* Task.swift */; };
 		09C65BA627DF87EB0038C96E /* TaskViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09C65BA527DF87EB0038C96E /* TaskViewModel.swift */; };
 		09C65BA827DF8C500038C96E /* NewTaskViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09C65BA727DF8C500038C96E /* NewTaskViewController.swift */; };
+		09C65BB027E0796A0038C96E /* TaskTypeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09C65BAE27E0796A0038C96E /* TaskTypeCell.swift */; };
+		09C65BB127E0796A0038C96E /* TaskTypeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 09C65BAF27E0796A0038C96E /* TaskTypeCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +69,8 @@
 		09C65BA127DF86140038C96E /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
 		09C65BA527DF87EB0038C96E /* TaskViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskViewModel.swift; sourceTree = "<group>"; };
 		09C65BA727DF8C500038C96E /* NewTaskViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewTaskViewController.swift; sourceTree = "<group>"; };
+		09C65BAE27E0796A0038C96E /* TaskTypeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskTypeCell.swift; sourceTree = "<group>"; };
+		09C65BAF27E0796A0038C96E /* TaskTypeCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TaskTypeCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -253,6 +257,8 @@
 		09C65BA327DF87C00038C96E /* Cells */ = {
 			isa = PBXGroup;
 			children = (
+				09C65BAE27E0796A0038C96E /* TaskTypeCell.swift */,
+				09C65BAF27E0796A0038C96E /* TaskTypeCell.xib */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -378,6 +384,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				09C65BB127E0796A0038C96E /* TaskTypeCell.xib in Resources */,
 				0927DB1C27DA48F200BE0309 /* LaunchScreen.storyboard in Resources */,
 				0927DB1927DA48F200BE0309 /* Assets.xcassets in Resources */,
 				0927DB4E27DA4D1300BE0309 /* emilio 20.ttf in Resources */,
@@ -408,6 +415,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				09C65BA227DF86140038C96E /* Task.swift in Sources */,
+				09C65BB027E0796A0038C96E /* TaskTypeCell.swift in Sources */,
 				0927DB5827DA63E800BE0309 /* Box.swift in Sources */,
 				0927DB1427DA48F000BE0309 /* MainViewController.swift in Sources */,
 				0927DB5427DA4E4C00BE0309 /* ColorsExt.swift in Sources */,

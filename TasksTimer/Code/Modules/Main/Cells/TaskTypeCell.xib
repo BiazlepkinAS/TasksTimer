@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="TaskTypeCell" customModule="TasksTimer" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="120" height="120"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="120" height="120"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RcA-cy-zF7">
+                        <rect key="frame" x="0.0" y="0.0" width="120" height="120"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Irz-6F-g8I">
+                                <rect key="frame" x="21" y="0.0" width="78" height="78"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="gamecontroller" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="1ts-sk-mtc">
+                                        <rect key="frame" x="12" y="21.5" width="54.5" height="35.5"/>
+                                        <color key="tintColor" systemColor="labelColor"/>
+                                        <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="25" scale="large" weight="semibold"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="Irz-6F-g8I" secondAttribute="height" multiplier="1:1" id="7yR-DF-h7l"/>
+                                    <constraint firstItem="1ts-sk-mtc" firstAttribute="centerY" secondItem="Irz-6F-g8I" secondAttribute="centerY" id="LP6-iw-BGT"/>
+                                    <constraint firstItem="1ts-sk-mtc" firstAttribute="centerX" secondItem="Irz-6F-g8I" secondAttribute="centerX" id="OQU-wb-FQU"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Gaming" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6s1-EE-czr">
+                                <rect key="frame" x="34.5" y="103" width="51" height="17"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Irz-6F-g8I" firstAttribute="top" secondItem="RcA-cy-zF7" secondAttribute="top" id="8bo-qa-ojU"/>
+                            <constraint firstItem="6s1-EE-czr" firstAttribute="centerX" secondItem="RcA-cy-zF7" secondAttribute="centerX" id="Iji-A1-IlD"/>
+                            <constraint firstItem="Irz-6F-g8I" firstAttribute="height" secondItem="RcA-cy-zF7" secondAttribute="height" multiplier="0.65" id="ddS-bi-z3n"/>
+                            <constraint firstItem="Irz-6F-g8I" firstAttribute="centerX" secondItem="RcA-cy-zF7" secondAttribute="centerX" id="fB0-xa-ZPr"/>
+                            <constraint firstAttribute="bottom" secondItem="6s1-EE-czr" secondAttribute="bottom" id="xZv-Fc-XEh"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="RcA-cy-zF7" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="4OD-pC-1ri"/>
+                <constraint firstItem="RcA-cy-zF7" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="5CI-K8-lbn"/>
+                <constraint firstAttribute="trailing" secondItem="RcA-cy-zF7" secondAttribute="trailing" id="WUK-5O-Iqv"/>
+                <constraint firstAttribute="bottom" secondItem="RcA-cy-zF7" secondAttribute="bottom" id="kmQ-Zd-4P3"/>
+            </constraints>
+            <connections>
+                <outlet property="imageContainer" destination="Irz-6F-g8I" id="Vhz-Uw-4ti"/>
+                <outlet property="imageTypeView" destination="1ts-sk-mtc" id="Qmx-7G-v62"/>
+                <outlet property="typeNameLabel" destination="6s1-EE-czr" id="bYr-zL-OKd"/>
+            </connections>
+            <point key="canvasLocation" x="137.68115942028987" y="113.83928571428571"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="gamecontroller" catalog="system" width="128" height="80"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
