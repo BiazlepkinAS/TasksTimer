@@ -11,9 +11,9 @@ class TaskViewModel {
     
     private var task: Task!
     private let taskType: [TaskType] = [
-    TaskType(symbolName: "start", typeName: "Priority"),
+    TaskType(symbolName: "star", typeName: "Priority"),
     TaskType(symbolName: "iphone", typeName: "Develop"),
-    TaskType(symbolName: "gamesCont", typeName: "Gaming"),
+    TaskType(symbolName: "gamecontroller", typeName: "Gaming"),
     TaskType(symbolName: "wand.and.stars.inverse", typeName: "Editing")
     ]
     

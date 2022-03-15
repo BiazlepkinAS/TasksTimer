@@ -41,8 +41,8 @@ class TaskTypeCell: UICollectionViewCell {
         self.typeNameLabel.text = taskType.typeName
         
         if (isSelected) {
-            self.imageContainer.backgroundColor = UIColor(hex: "17b890").withAlphaComponent(0.5)
-            self.typeNameLabel.textColor = UIColor(hex: "006666")
+            self.imageContainer.backgroundColor = UIColor(hex: "82FF15").withAlphaComponent(0.8)
+            self.typeNameLabel.textColor = UIColor(hex: "82FF15")
             self.imageTypeView.tintColor = UIColor.white
             self.imageTypeView.image = UIImage(systemName: taskType.symbolName, withConfiguration: UIImage.SymbolConfiguration(pointSize: 26, weight: .medium))
         }else  {
