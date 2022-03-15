@@ -13,9 +13,6 @@ class TaskTypeCell: UICollectionViewCell {
     @IBOutlet var imageTypeView: UIImageView!
     @IBOutlet var typeNameLabel: UILabel!
     
-    
-    
-
     override func awakeFromNib() {
         super.awakeFromNib()
 
@@ -40,7 +37,7 @@ class TaskTypeCell: UICollectionViewCell {
     }
     
     
-    private func setupCell(taskType: TaskType, isSelected: Bool) {
+     func setupCell(taskType: TaskType, isSelected: Bool) {
         self.typeNameLabel.text = taskType.typeName
         
         if (isSelected) {

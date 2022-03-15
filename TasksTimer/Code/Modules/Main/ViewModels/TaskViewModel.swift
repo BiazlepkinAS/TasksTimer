@@ -8,6 +8,7 @@
 import Foundation
 
 class TaskViewModel {
+    
     private var task: Task!
     private let taskType: [TaskType] = [
     TaskType(symbolName: "start", typeName: "Priority"),
@@ -15,11 +16,13 @@ class TaskViewModel {
     TaskType(symbolName: "gamesCont", typeName: "Gaming"),
     TaskType(symbolName: "wand.and.stars.inverse", typeName: "Editing")
     ]
+    
     private var selectedIndex = -1 {
         didSet {
             self.task.taskType = self.getTaskType()[selectedIndex]
         }
     }
+    
     private var hours = Box(0)
     private var minutes = Box(0)
     private var seconds = Box(0)
